@@ -3,17 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebas
 import { getFirestore, enableIndexedDbPersistence } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyD_QaOxwHOYMHnBguQAQI829aIYRdCD0kk",
-    authDomain: "smartdrainagesystem-34437.firebaseapp.com",
-    projectId: "smartdrainagesystem-34437",
-    storageBucket: "smartdrainagesystem-34437.firebasestorage.app",
-    messagingSenderId: "603588509212",
-    appId: "1:603588509212:web:94f487b300ff3a888aa9d9",
-    measurementId: "G-JLXKR6C41S"
-};
+import { firebaseConfig } from './firebase-config.local.js';
 
 // Initialize Firebase
 let app;
@@ -57,4 +47,4 @@ try {
 }
 
 // Export for use in other files
-export { db, auth }; 
+export { db, auth };
